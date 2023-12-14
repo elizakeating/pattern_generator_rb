@@ -7,7 +7,7 @@ end
 RSpec.describe PatternGenerator do
   let(:pg) { PatternGenerator.new }
 
-  xcontext "Part 1: Verify Pattern Compliance" do
+  context "Part 1: Verify Pattern Compliance" do
     describe "#verify" do
       it "Given a generated serial number, return true or false based on whether or not the input matches the pattern" do
         pattern = ".#.@"
